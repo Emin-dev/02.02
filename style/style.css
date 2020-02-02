@@ -12,12 +12,15 @@ body{
     height: 100vh;
     display: inline-block;
     width: 300px;
-    background: rgb(30, 255, 0);
 }
 
 .menu{
+    height: 100vh;
+    display: inline-block;
+    width: 300px;
+    background: rgb(30, 255, 0);
     padding: 10px;
-    
+    position: fixed;
 }
 
 .right{
@@ -27,11 +30,14 @@ body{
     display: inline-block;
    
 }
+.right > ul{
+    display: inline-block;
+}
 .right > ul >li {
     box-sizing: border-box;
     padding: 5px;
     margin: 5px;
-    width: 350px;
+    width: 370px;
     height: 600px;
     display: inline-block;
     background: orange;
