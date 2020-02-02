@@ -1,0 +1,38 @@
+ .container *{
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.left{
+    height: 100vh;
+    display: inline-block;
+    width: 300px;
+    background: rgb(30, 255, 0);
+}
+
+.menu{
+    padding: 10px;
+    
+}
+
+.right{
+    width: 83%;
+    float: right;
+    height: 100vh;
+    display: inline-block;
+   
+}
+.right > ul >li {
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 5px;
+    width: 350px;
+    height: 600px;
+    display: inline-block;
+    background: orange;
+}
