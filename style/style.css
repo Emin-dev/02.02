@@ -1,39 +1,45 @@
- .container *{
+html {
+    scroll-behavior: smooth;
+}
+
+.container * {
     margin: 0px;
     padding: 0px;
     display: inline-block;
 }
-body{
+
+body {
     margin: 0px;
     padding: 0px;
 }
 
-.left{
-    height: 100vh;
+.leftnavbar {
+  
     display: inline-block;
     width: 300px;
+    position: fixed; 
 }
 
-.menu{
+.menu {
     height: 100vh;
     display: inline-block;
-    width: 300px;
-    background: rgb(30, 255, 0);
+    width: 273px;
+    background: url(../imgs/left-menu-background.jpg);
     padding: 10px;
-    position: fixed;
 }
 
-.right{
+.rightcontext {
     width: 83%;
     float: right;
     height: 100vh;
     display: inline-block;
-   
 }
-.right > ul{
+
+.rightcontext>ul {
     display: inline-block;
 }
-.right > ul >li {
+
+.rightcontext>ul>li {
     box-sizing: border-box;
     padding: 5px;
     margin: 5px;
@@ -41,4 +47,112 @@ body{
     height: 600px;
     display: inline-block;
     background: orange;
+}
+
+.logo>img {
+    width: 100%;
+}
+
+.logo {
+    padding: 40px 40px 20px 15px;
+}
+
+
+.submenu>ul>li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    width: 222px;
+    margin: 15px;
+    display: block;
+    color: white;
+}
+
+.submenu>ul>li>a {
+    transition-duration: .3s;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+.submenu>ul>li>a:hover{
+  
+    color: #d34e35;
+}
+
+.text {
+    padding: 5px;
+}
+
+.icon1 {
+    margin-right: 10px;
+}
+
+.icon2 {
+    float: right;
+    font-size: 10px;
+}
+
+.blogmenu {
+    display: none;
+}
+
+.none{
+    display: none;
+}
+.open {
+    display: block;
+}
+
+.blogmenu>ul>li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    text-transform: uppercase;
+    width: 200px;
+    margin: 5px;
+    display: block;
+    color: white;
+}
+
+.blogmenu>ul>li>a {
+    transition-duration: .3s;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.blogmenu>ul>li>a:hover{
+    color: #d34e35;
+}
+.now>span{
+    color: #d34e35;
+}
+.social>p{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    display: block;
+    text-transform: uppercase;
+}
+.social>ul>li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    width: 20px;
+    margin: 5px;
+    display: inline-block;
+}
+
+
+.social>ul>li>a{
+    transition: .3s;
+color: white;
+}
+
+.social>ul>li>a:hover{
+    color: rgb(0, 0, 0);
+    }
+.social{
+    margin: 25px 0px 0px 15px;
 }
