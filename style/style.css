@@ -29,7 +29,8 @@ body {
 }
 
 .rightcontext {
-    width: 83%;
+    
+    margin-left: 300px;
     float: right;
     height: 100vh;
     display: inline-block;
