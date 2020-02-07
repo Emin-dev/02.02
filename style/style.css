@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
+a{text-decoration: none;}
 .container * {
     margin: 0px;
     padding: 0px;
@@ -16,7 +17,7 @@ body {
 .leftnavbar {
   
     display: inline-block;
-    width: 300px;
+    /* width: 300px; */
     position: fixed; 
 }
 
@@ -30,7 +31,7 @@ body {
 
 .rightcontext {
     
-    margin-left: 300px;
+    margin-left: 293px;
     float: right;
     height: 100vh;
     display: inline-block;
@@ -72,7 +73,6 @@ body {
     padding: 15px;
     transition-duration: .3s;
     width: 100%;
-    text-decoration: none;
     color: white;
 }
 .submenu>ul>li>a:hover{
@@ -118,7 +118,6 @@ body {
     padding: 5px;
     transition-duration: .3s;
     width: 100%;
-    text-decoration: none;
     color: white;
 }
 
@@ -161,18 +160,57 @@ color: white;
     width: 100%;
     
 }
+.imgbox{
+    position: relative;
+}
+
+.imgbox>span>i{
+    font-size: 40px;
+    color: #d34d3500;
+    position: absolute;
+    transition: .4s;
+    transform: translate(-50% ,-50%);
+    top: 50%;
+    left: 50%;
+    opacity: 100%;
+}
+
+.overlay:hover + span>i{
+    color: #d34d35;
+}
+
+.overlay{
+    position: absolute;
+    transition: .4s;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+}
+.overlay:hover{
+background-color: rgba(255, 255, 255, 0.637);
+}
+
 .namebox{
     width: 100%;
 }
+
 .info>.name{
     font-family: Montserrat, sans-serif;
     font-size: 14px;
     line-height: 25px;
+    letter-spacing: 0px;
     font-weight: 400;
+    font-style: normal;
     text-transform: uppercase;
     color: #555555;
+    transition: .3s;
 }
-
+.info>.name:hover{
+    color: #d34e35;
+}
 .info>.price{
     display: block;
     font-family: Montserrat, sans-serif;
@@ -184,8 +222,77 @@ color: white;
 }
 
 .namebox>.button{
-    padding: 10px 20px 10px 20px;
+    padding: 0px 25px 0px 25px;
     float:right;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
     color: #707070;
     background-color: #f6f5f5;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 2px;
+    transition: .3s;
 }
+
+.namebox>.button:hover{
+    color: white;
+    background: #d34e35;
+}
+.footer{
+    box-sizing: border-box;
+    padding: 45px;
+    width: 100%;
+    height: 120px;
+    background: #1e1d1d;
+}
+
+.footername{
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #aaaaaa;
+    transition: .3s;
+}
+.footername:hover{
+    color: white;
+}
+.footer>ul{
+    float: right;
+}
+
+
+.footer>ul>li>a:hover{
+    color: white;
+}
+.footer>ul>li>a{
+    transition: .3s;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-right: 15px;
+    color: #aaaaaa;
+
+}
+
+
+
+
+a>span{transition: .3s;}
+a>span:hover{
+    color: black;
+}
+
+.footer>ul>li>a>span{
+    padding-right: 20px;
+}
+
+
+
