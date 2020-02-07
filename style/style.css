@@ -183,7 +183,7 @@ color: white;
 }
 .overlay{
     position: absolute;
-    transition: 5s;
+    transition: 4s;
     width: 100%;
     height: 100%;
     top: 0;
