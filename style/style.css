@@ -17,7 +17,6 @@ body {
 .leftnavbar {
   
     display: inline-block;
-    /* width: 300px; */
     position: fixed; 
 }
 
@@ -95,6 +94,7 @@ body {
 
 .blogmenu {
     display: none;
+    padding-left: 10px;
 }
 
 .none{
@@ -286,7 +286,7 @@ background-color: rgba(255, 255, 255, 0.637);
 
 
 a>span{transition: .3s;}
-a>span:hover{
+.footer>ul>li>a>span:hover{
     color: black;
 }
 
