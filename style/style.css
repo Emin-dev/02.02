@@ -2,7 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
-a{text-decoration: none;}
+a {
+    text-decoration: none;
+}
+
 .container * {
     margin: 0px;
     padding: 0px;
@@ -17,19 +20,25 @@ body {
 .leftnavbar {
   
     display: inline-block;
-    position: fixed; 
+    position: fixed;
 }
-
+.imgbox span{
+    cursor: pointer;
+}
 .menu {
+    overflow: auto;
     height: 100vh;
     display: inline-block;
     width: 273px;
     background: url(../imgs/left-menu-background.jpg);
     padding: 10px;
 }
+.menu::-webkit-scrollbar{
+  display: none;
+  /* sctollbar ucun */
+}
 
 .rightcontext {
-    
     margin-left: 293px;
     float: right;
     height: 100vh;
@@ -46,7 +55,6 @@ body {
     margin: 5px;
     width: 370px;
     display: inline-block;
-  
 }
 
 .logo>img {
@@ -56,7 +64,6 @@ body {
 .logo {
     padding: 40px 40px 20px 15px;
 }
-
 
 .submenu>ul>li {
     font-family: 'Montserrat', sans-serif;
@@ -74,8 +81,8 @@ body {
     width: 100%;
     color: white;
 }
-.submenu>ul>li>a:hover{
-  
+
+.submenu>ul>li>a:hover {
     color: #d34e35;
 }
 
@@ -97,9 +104,10 @@ body {
     padding-left: 10px;
 }
 
-.none{
+.none {
     display: none;
 }
+
 .open {
     display: block;
 }
@@ -121,18 +129,21 @@ body {
     color: white;
 }
 
-.blogmenu>ul>li>a:hover{
+.blogmenu>ul>li>a:hover {
     color: #d34e35;
 }
-.active>a>span{
+
+.active>a>span {
     color: #d34e35;
 }
-.social>p{
+
+.social>p {
     font-family: 'Montserrat', sans-serif;
     color: white;
     display: block;
     text-transform: uppercase;
 }
+
 .social>ul>li {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -143,44 +154,44 @@ body {
     display: inline-block;
 }
 
-
-.social>ul>li>a{
+.social>ul>li>a {
     transition: .3s;
-color: white;
+    color: white;
 }
 
-.social>ul>li>a:hover{
+.social>ul>li>a:hover {
     color: rgb(0, 0, 0);
-    }
-.social{
+}
+
+.social {
     margin: 25px 0px 0px 15px;
 }
 
-.imgbox>img{
+.imgbox>img {
     width: 100%;
-    
 }
-.imgbox{
+
+.imgbox {
     z-index: 5;
     position: relative;
 }
 
-.imgbox>span>i{
+.imgbox>span>i {
     font-size: 40px;
     color: #d34d3500;
     position: absolute;
     transition: .4s;
-    transform: translate(-50% ,-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     opacity: 100%;
 }
 
-.imgbox:hover span>i{
+.imgbox:hover span>i {
     color: #d34d35;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     transition: .3s;
     width: 100%;
@@ -190,15 +201,16 @@ color: white;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0);
 }
-.imgbox:hover .overlay{
+
+.imgbox:hover .overlay {
     background-color: rgba(255, 255, 255, 0.521);
 }
 
-.namebox{
+.namebox {
     width: 100%;
 }
 
-.info>.name{
+.info>.name {
     font-family: Montserrat, sans-serif;
     font-size: 14px;
     line-height: 25px;
@@ -209,10 +221,12 @@ color: white;
     color: #555555;
     transition: .3s;
 }
-.info>.name:hover{
+
+.info>.name:hover {
     color: #d34e35;
 }
-.info>.price{
+
+.info>.price {
     display: block;
     font-family: Montserrat, sans-serif;
     font-size: 14px;
@@ -222,9 +236,9 @@ color: white;
     color: #d34e35;
 }
 
-.namebox>.button{
+.namebox>.button {
     padding: 0px 25px 0px 25px;
-    float:right;
+    float: right;
     font-family: Montserrat, sans-serif;
     font-size: 12px;
     line-height: 42px;
@@ -240,11 +254,12 @@ color: white;
     transition: .3s;
 }
 
-.namebox>.button:hover{
+.namebox>.button:hover {
     color: white;
     background: #d34e35;
 }
-.footer{
+
+.footer {
     box-sizing: border-box;
     padding: 45px;
     width: 100%;
@@ -252,7 +267,7 @@ color: white;
     background: #1e1d1d;
 }
 
-.footername{
+.footername {
     font-family: Montserrat, sans-serif;
     font-size: 14px;
     line-height: 13px;
@@ -261,18 +276,20 @@ color: white;
     color: #aaaaaa;
     transition: .3s;
 }
-.footername:hover{
+
+.footername:hover {
     color: white;
 }
-.footer>ul{
+
+.footer>ul {
     float: right;
 }
 
-
-.footer>ul>li>a:hover{
+.footer>ul>li>a:hover {
     color: white;
 }
-.footer>ul>li>a{
+
+.footer>ul>li>a {
     transition: .3s;
     font-family: Montserrat, sans-serif;
     font-size: 15px;
@@ -280,20 +297,16 @@ color: white;
     font-weight: 400;
     margin-right: 15px;
     color: #aaaaaa;
-
 }
 
+a>span {
+    transition: .3s;
+}
 
-
-
-a>span{transition: .3s;}
-.footer>ul>li>a>span:hover{
+.footer>ul>li>a>span:hover {
     color: black;
 }
 
-.footer>ul>li>a>span{
+.footer>ul>li>a>span {
     padding-right: 20px;
 }
-
-
-
