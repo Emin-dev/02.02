@@ -161,6 +161,7 @@ color: white;
     
 }
 .imgbox{
+    z-index: 5;
     position: relative;
 }
 
@@ -175,12 +176,10 @@ color: white;
     opacity: 100%;
 }
 
-.overlay:hover + span>i{
+.imgbox:hover span>i{
     color: #d34d35;
 }
-.imgbox>span>i:hover{
-    color: #d34d35;
-}
+
 .overlay{
     position: absolute;
     transition: 4s;
@@ -191,9 +190,9 @@ color: white;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0);
 }
-.overlay:hover{
+.imgbox:hover .overlay{
     transition: .3s;
-background-color: rgba(255, 255, 255, 0.521);
+    background-color: rgba(255, 255, 255, 0.521);
 }
 
 .namebox{
