@@ -124,7 +124,7 @@ body {
 .blogmenu>ul>li>a:hover{
     color: #d34e35;
 }
-.now>span{
+.active>a>span{
     color: #d34e35;
 }
 .social>p{
