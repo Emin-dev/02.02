@@ -177,6 +177,7 @@ body {
 }
 
 .imgbox>span>i {
+    font-weight: lighter;
     font-size: 40px;
     color: #d34d3500;
     position: absolute;
